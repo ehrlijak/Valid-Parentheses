@@ -26,7 +26,7 @@ var isValid = function(s) {
                 strng = str;
                 str = strng.substr(2, strng.length);
             }
-            else if (map.get(temp) === str.substr(strng.length -1 , strng.length)) {
+            else if (map.get(temp) === str.substr(str.length -1 , str.length)) {
                 strng = str;
                 str = strng.substr(1, strng.length - 2);
             }
@@ -48,4 +48,4 @@ var isValid = function(s) {
 
 
 
-console.log(isValid("([{{[]}}])"));
+console.log(isValid("([]())"));
